@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gilles Plédran — Formateur Consultant</title>
+<style>
+  :root{
+    --bg:#ffffff;
+    --fg:#0a0a0a;
+    --muted:#6e6e6e;
+    --line:#e6e6e6;
+  }
+  *{box-sizing:
+    border-box
+  }
+  html,body{
+    margin:0;
+    padding:0;
+    background:var(--bg);
+    color:var(--fg);
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif
+  }
+  h1, h2, h3 {
+    text-align: center;
+  }
+  .container{
+    max-width:960px;
+    margin:0 auto;
+    padding:28px
+  }
+  .header{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .profile-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #f2f2f2;
+    margin-bottom: 12px;
+  }
+  .subtitle{
+    margin: 4px 0 0;
+    color: var(--muted);
+  }
+  .brand{
+    display:flex;
+    gap:16px;
+    align-items:center
+  }
+  .brand img{
+    width:72px;
+    height:72px;
+    border-radius:50%;
+    object-fit:cover;
+    background:#f2f2f2
+  }
+  .brand h1{
+    font-size:28px;
+    margin:0
+  }
+  .brand p{
+    margin:4px 0 0;
+    color:var(--muted)
+  }
+  .section{
+    margin-top:34px;
+    padding-top:14px;
+    border-top:1px solid var(--line)
+  }
+  .section h2{
+    font-size:18px;
+    margin:0 0 16px;
+    text-transform:uppercase;
+    letter-spacing:.06em
+  }
+  .grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:16px
+  }
+  @media(min-width:760px){
+    .grid{
+      grid-template-columns:repeat(2,1fr)
+    }
+  }
+  .card{
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:16px
+  }
+  .card .btn {
+    display: block;
+    margin: 16px auto 0 auto;
+    text-align: center;
+    width: fit-content;
+  }
+  .list{
+    display:grid;
+    gap:10px
+  }
+  .row{
+    display:flex;
+    justify-content:space-between;
+    gap:10px
+  }
+  .k{
+    color:var(--muted)
+  }
+  .badges{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap
+  }
+  .badge{
+    border:1px solid var(--fg);
+    padding:6px 10px;
+    border-radius:999px;
+    font-size:13px
+  }
+  .media{
+    display:flex;
+    gap:14px;
+    align-items:center
+  }
+  .media img{
+    width:56px;
+    height:56px;
+    object-fit:contain;
+    filter:grayscale(100%)
+  }
+  a.btn{
+    display:inline-block;
+    background:var(--fg);
+    color:#fff;
+    text-decoration:none;
+    padding:10px 14px;
+    border-radius:10px
+  }
+  .small{
+    font-size:14px;
+    color:var(--muted)
+  }
+  footer{
+    margin:36px 0 8px;
+    color:var(--muted);
+    font-size:13px;
+    text-align:center
+  }
+  #parcours .card .card {
+    margin-bottom: 16px;
+  }
+  #contact .card {
+    max-width: 400px;
+    margin: 0 auto;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <img src="assets/profile.png" class="profile-img" alt="Photo de profil">
+    <h1>Gilles PLEDRAN</h1>
+    <p class="subtitle">FORMATEUR CONSULTANT RESTAURATION</p>
+  </header>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="card">
+      <div class="list">
+        <div class="row"><span class="k">Téléphone</span><a href="tel:+33614570123">06.14.57.01.23</a></div>
+        <div class="row"><span class="k">Email</span><a href="mailto:chf.formation@gmail.com">chf.formation@gmail.com</a></div>
+        <div class="row"><span class="k">Localisation</span><span>Paris / Île-de-France</span></div>
+      </div>
+      <a class="btn" href="assets/Gilles_Pledran.vcf" download="Gilles_Pledran.vcf">Télécharger mes coordonnées</a>
+    </div>
+  </section>
+
+  <section id="intervention" class="section">
+    <h2>Domaines d'intervention</h2>
+    <div class="card" style="text-align: left; width: fit-content; margin: 0 auto;">
+      <div class="list">
+          <div>• Hygiène et sécurité, PMS, hygiénoscopie</div>
+          <div>• Techniques de Cuisine Traditionnelle</div>
+          <div>• Spécificités de la Cuisine Collective</div>
+          <div>• Préparation des CQP IH / TP / TFP IH</div>
+          <div>• Préparation des Titres Pro cuisinier</div>
+          <div>• Mise en place des produits bio</div>
+          <div>• Nouvelles techniques (basse température, sous-vide...)</div>
+          <div>• Analyse coût matière, définir des objectifs</div>
+          <div>• Atelier de cuisine adapté aux jeunes publics</div>
+          <div>• Initiation aux saveurs du monde</div>
+          <div>• Animation contexte difficile (milieu carcérale & insertion)</div>
+          <div>• Formation management équipe encadrement</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="parcours" class="section">
+    <h2>Parcours</h2>
+    <div class="grid">
+      
+      <div class="card">
+        <h3>Activité Professionnelle</h3>
+        
+        <div class="card">
+            <div>
+              <div><b>STELO-FORMATION</b></div>
+              <div class="small">2018 – Aujourd'hui</div>
+              <div class="small">Formation des CQP / TP / TFP IH. Commis. Chefs. Chefs gérant</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+              <div><b>SFC GROUP</b></div>
+              <div class="small">2018 – Aujourd'hui</div>
+              <div class="small">Formation HACCP mise en place PMS audit hygiène</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+              <div><b>D.C.A prévention</b></div>
+              <div class="small">2018 – Aujourd'hui</div>
+              <div class="small">Audit & Conseils, mise en place d’actions d’accompagnement</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+              <div><b>MNA Conseils</b></div>
+              <div class="small">2010 – 2018</div>
+              <div class="small">Formation management équipe encadrement (desk, cuisine, salle)</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+              <div><b>DYNAMIQUE CONSULTANT</b></div>
+              <div class="small">2014 – Aujourd'hui</div>
+              <div class="small">Formation sous vide</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+              <div><b>PROM’HOTE/ IFITEL</b></div>
+              <div class="small">2009 – Aujourd'hui</div>
+              <div class="small">Intervenant C.Q.P/IH</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+              <div><b>FORGECO/ COOK’N’CO</b></div>
+              <div class="small">2009 – Aujourd'hui</div>
+              <div class="small">Formateur Adultes en réinsertion, en maison d’arrêt</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+              <div><b>AFEC</b></div>
+              <div class="small">4 mois</div>
+              <div class="small">Formateur référent Titre Pro IH</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+              <div><b>INFA</b></div>
+              <div class="small">10 mois</div>
+              <div class="small">Intervenant C.A.P Petite Enfance</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+              <div><b>Lycée hôtelier EUGENIE COTTON</b></div>
+              <div class="small">9 mois</div>
+              <div class="small">Formateur C.A.P Cuisinier</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+              <div><b>BRC</b></div>
+              <div class="small">300 heures</div>
+              <div class="small">Formation introduire le bio dans les cantines scolaire</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+              <div><b>Association AURORE</b></div>
+              <div class="small">2007 – 2008</div>
+              <div class="small">Formateur Adultes en réinsertion</div>
+            </div>
+        </div>
+
+      </div>
+
+      <div class="card">
+        <h3>Certifications & Diplômes</h3>
+        
+        <div class="card">
+            <div>
+              <div><b>MICROSOFT 365</b></div>
+              <div class="small">Écosystème, gestion des données</div>
+              <div class="small">2024</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+              <div><b>Cybersécurité, RGPD</b></div>
+              <div class="small">2024</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+              <div><b>F.L.E</b></div>
+              <div class="small">Certification enseignement F.L.E alliance Française</div>
+              <div class="small">2019</div>
+            </div>
+        </div>  
+     
+        <div class="card">
+            <div>
+              <div><b>ADEFIH</b></div>
+              <div class="small">Formateur labellisé ADEFIH pour formation de Tuteur. Ambassadeur Métiers</div>
+              <div class="small">2011</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+              <div><b>Certification RNCP</b></div>
+              <div class="small">Formation de Formateur Niv II • SIPCA</div>
+              <div class="small">2010</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+              <div><b>Formation HACCP /PMS</b></div>
+              <div class="small">Permanente</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+              <div><b>Formation Gestion en intra CERES</b></div>
+              <div class="small">1998</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+              <div><b>C.A.P Cuisine EPMT IH</b></div>
+              <div class="small">1984</div>
+            </div>
+        </div> 
+
+      </div>
+    </div>
+  </section>
+
+  <section id="references" class="section">
+    <h2>Références</h2>
+    <div class="grid">
+      <div class="card">
+        <div><b>Le Micocoule</b></div>
+      </div>
+      <div class="card">
+        <div><b>Clinique de Garches</b></div>
+      </div>
+      <div class="card">
+        <div><b>Ambassade de France</b></div>
+      </div>
+      <div class="card">
+        <div><b>Groupe BLANC</b></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Domaines d'intervention</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Expertise Technique</h3>
+        <div class="badges">
+          <span class="badge">HACCP & Hygiène</span>
+          <span class="badge">Cuisine Traditionnelle</span>
+          <span class="badge">Cuisine Collective</span>
+          <span class="badge">Cuisson Sous-vide</span>
+          <span class="badge">Basse température</span>
+          <span class="badge">Produits Bio</span>
+          <span class="badge">Analyse Coût Matière</span>
+          <span class="badge">Audit & PMS</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Pédagogie & Autres</h3>
+        <div class="badges">
+          <span class="badge">Formation Adultes</span>
+          <span class="badge">Insertion & Milieu Carcéral</span>
+          <span class="badge">Management d'équipe</span>
+          <span class="badge">Création CQP / Titres Pro</span>
+          <span class="badge">Anglais</span>
+          <span class="badge">Voyages (Inde, USA, Asie)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>© EI Siret 49252061400024 • APE 8559A • Enregistré sous le numéro 11756086675</footer>
+</div>
+</body>
+</html>
